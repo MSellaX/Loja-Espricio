@@ -1,0 +1,168 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_c8cfe79fd98244209b7315f74f5f864c
+  created: 1755607834232
+  modified: 1755607834232
+  description: ""
+collection:
+  - name: Atividade 1
+    meta:
+      id: fld_2181633bf820439295c17e35446e2e62
+      created: 1755608229159
+      modified: 1755618339292
+      sortKey: -1755608229359
+      description: ""
+  - name: POST
+    meta:
+      id: fld_394b3a6f68d54ffb89c877a7f0bdc415
+      created: 1757434092048
+      modified: 1757434092048
+      sortKey: -1757434092048
+      description: ""
+  - name: atividade POST
+    meta:
+      id: fld_bf40b581ff1d45cf89e8d034d20f3ae8
+      created: 1757436445348
+      modified: 1757436445348
+      sortKey: -1757436445348
+      description: ""
+  - name: LOJA ESPRICIO
+    meta:
+      id: fld_25a3f1ae1fac476abbdefb0a814e4c30
+      created: 1759862623538
+      modified: 1760455316277
+      sortKey: -1759862623538
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_1fb32d632ed44cefbf356ced839ef395
+          created: 1760455162425
+          modified: 1760455162425
+          sortKey: -1760455162425
+          description: ""
+        children:
+          - url: http://localhost:8081/clientes
+            name: Listar Clientes
+            meta:
+              id: req_be20e9c6cf1d4ca1890e7269358181f2
+              created: 1759862627017
+              modified: 1760455257789
+              isPrivate: false
+              description: ""
+              sortKey: -1760455193508
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nomeCliente": "jorgim",
+                	"cpfCliente": "29297743837"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/clientes
+            name: Listar Clientes
+            meta:
+              id: req_604ce93911bf4c748f4dcfdadbad1623
+              created: 1760455145295
+              modified: 1760455273501
+              isPrivate: false
+              description: ""
+              sortKey: -1760455193408
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Produtos
+        meta:
+          id: fld_8dec4a5f0c3845ff8cd114b21f7bc86c
+          created: 1760455172661
+          modified: 1760455172661
+          sortKey: -1760455172661
+          description: ""
+        children:
+          - url: http://localhost:8081/produtos
+            name: Adicionar Produtos
+            meta:
+              id: req_7af0242548204a80a7278782f40c00a5
+              created: 1758655131694
+              modified: 1760455228554
+              isPrivate: false
+              description: ""
+              sortKey: -1760455228515
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nomeProduto": "Abobrinha",
+                	"precoProdutor": 5.50
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/produtos
+            name: Listar Produtos
+            meta:
+              id: req_f41dfab8ca1c4364aeaf3a4fd08626ae
+              created: 1760455142397
+              modified: 1760455268682
+              isPrivate: false
+              description: ""
+              sortKey: -1760455228615
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d671059aaa24f9e51800bce0e359a6658e8708d6
+    created: 1755607834246
+    modified: 1755607834246
+environments:
+  name: Base Environment
+  meta:
+    id: env_d671059aaa24f9e51800bce0e359a6658e8708d6
+    created: 1755607834239
+    modified: 1755607834239
+    isPrivate: false
