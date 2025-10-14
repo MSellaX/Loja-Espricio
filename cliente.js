@@ -1,12 +1,10 @@
 const express = require("express");
 const app = express();
-const {produtosRoutes} = require("./SRC/routes/produtoRoutes");
-const {clienteRoutes} = require("./SRC/routes/clienteRoutes");
+const clienteRoutes = require("./SRC/routes/clienteRoutes");
 const PORT = 8081;
 
 app.use(express.json());
 
-app.use('/', produtosRoutes);
 app.use('/', clienteRoutes);
 
 app.listen(PORT, ()=>{
