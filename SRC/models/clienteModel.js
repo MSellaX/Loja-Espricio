@@ -24,7 +24,7 @@ const clienteModel = {
             
             const pool = await getConnection();
 
-            const querySQL = 'SELECT * FROM clientes WHERE cpfCliente = @cpfCliente;';
+            const querySQL = 'SELECT * FROM clientes WHERE cpfCliente = @cpfCliente'
 
             const result = await pool.request()
                 .input('cpfCliente', sql.Char(14), cpfCliente)
